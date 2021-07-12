@@ -9,19 +9,45 @@
     <link rel="stylesheet" href="../css/style.css">
 <!-- ================ Boxicons link ======================= -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =============== Swiper ============= -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 </head>
 <body>
+        <nav class="menu_nav" id="nav_bar">
+            <ul class="menu_items">
+                <li class="menu_list"><a href="#" class="menu_link">Home</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Features</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">About Us</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Shop</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Contact Us</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Blog News</a></li>
+                    <!-- <li class="menu_list"><a href="#" class="menu_link"><i class='bx bx-moon change-theme' id="theme-button"></i></a></li> -->
+            </ul>
+        </nav>
+
+     <!-- ========== SCROLL TOP ========== -->
+     <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
     <!-- ========= header ================ -->
     <header class="header">
         <div class="header_container">
-            <div class="header_imageCont"><a href="#" class="header_logo">Shuga's Empire</a></div>
+            <div class="header_imageCont">
+                <a href="#" class="header_logo">Casa Di Moda</a>
+            </div>
+            <!-- ============= Toggle menu for mobile =============== -->
+          <div class="menu_icon"><i class='bx bx-menu-alt-right'id="nav_toggle"></i></div>
+            <div class="cart_mobile">
+                <i class="bx bx-cart-alt"></i>
+            </div>
+            <i class='bx bx-moon change-theme show_theme' id="theme-button"></i>
             <!-- ======== navigation =========== -->
             <nav class="header_nav">
                 <ul class="header_items">
                     <li class="header_list"><a href="#home" class="header_link link_active">Home</a></li>
                     <li class="header_list"><a href="#features" class="header_link">Features</a></li>
                     <li class="header_list"><a href="#aboutus" class="header_link">About Us</a></li>
-                    <li class="header_list"><a href="#services" class="header_link">Shop all</a></li>
+                    <li class="header_list"><a href="#services" class="header_link">Shop</a></li>
                     <li class="header_list"><a href="#contactus" class="header_link">Contact Us</a></li>
                     <li class="header_list"><a href="#blog" class="header_link">Blog News</a></li>
                     <li class="header_list nav_icon"><i class='bx bx-cart-alt'></i></li>
@@ -35,8 +61,8 @@
             <div class="header_section bd-grid">
                 <div class="header_wrapper-01">
                     <div class="header_iconBox"><i class='bx bx-purchase-tag'></i></div>
-                    <h2 class="header_heading">Any Variation that fits <br> your imagination</h2>
-                    <span class="body_line"></span>
+                    <h2 class="header_heading">Qualsiasi variazione che si <br> adatta alla tua immaginazione</h2>
+                    <span class="body_line header_center"></span>
                     <p class="header_description">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Odio dolor necessitatibus dolores saepe aliquid quis ex non veniam molestias,voluptates 
@@ -48,6 +74,40 @@
             </div>
         </section>
     </header>
+
+    <!-- ========== Features ================== -->
+    <section class="section features" id="features">
+        <div class="features__container bd-grid">
+            <div class="features__box features_mobile">
+                <i class='bx bxs-truck'></i>
+                <div class="features_textBox">
+                    <h2 class="features_main">FREE DELIVERY</h2>
+                    <p class="features__text">For all orders above $100</p>
+               </div>
+            </div>
+            <div class="features__box features_mobile">
+                <i class='bx bx-transfer-alt'></i>
+                <div class="features_textBox">
+                    <h2 class="features_main">90 DAYS RETURN</h2>
+                    <p class="features__text">If goods have problems</p>
+               </div>
+            </div>
+            <div class="features__box features_mobile">
+                <i class='bx bx-credit-card'></i>
+                <div class="features_textBox">
+                    <h2 class="features_main">Secure Payment</h2>
+                    <p class="features__text">100% secure payment</p>
+               </div>
+            </div>
+            <div class="features__box">
+                <i class='bx bx-phone-call'></i>
+                <div class="features_textBox">
+                    <h2 class="features_main">24/7 SUPPORT</h2>
+                    <p class="features__text">Dedicated support</p>
+               </div>
+            </div>
+        </div>
+    </section>
 
     <!-- =========== Main Content ============ -->
     <section class="section shopping_section">
@@ -78,7 +138,7 @@
 
             <div class="shopping_box fade shopping_kid">
                 <div class="shopping_textBox move_left">
-                    <h2 class="shopping_heading">We've got <span class="shopping_active">something Big</span> for your <span class="shopping_black">kids</span></h2>
+                    <h2 class="shopping_heading">Big <span class="shopping_active">things </span> for your <span class="shopping_black">kids</span></h2>
                     <span class="body_line"></span>
                     <p class="shopping_description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur ipsam sunt fugiat beatae mollitia voluptatibus expedita ea sit modi nisi laborum, 
@@ -102,8 +162,8 @@
     </section>
 
     <!-- ========== Collection section ============= -->
-    <section class="section">
-        <h2 class="section-title collection_heading">Shop Your SUHGA'S® Collection</h2>
+    <section class="section collection_section">
+        <h2 class="section-title">Shop Your SUHGA'S® Collection</h2>
         <span class="body_line collection_line"></span>
         <div class="collection_wrapper bd-grid">
             <div class="collection_box">
@@ -114,28 +174,147 @@
                 <div class="collection_box-icon"><i class='bx bx-basket'></i></div>
             </div>
             <div class="collection_box">
-                <img src="../image/pic-1-removebg-preview.png" alt="">
-                <p class="collection_box--main">Havanna shirt</p>
+                <img src="../image/pic-6-removebg-preview.png" alt="">
+                <p class="collection_box--main">Round Neck</p>
                 <span class="collection_box--line"></span>
-                <p class="collection_box--price">#2,000</p>
+                <p class="collection_box--price">#8,000</p>
                 <div class="collection_box-icon"><i class='bx bx-basket'></i></div>
             </div>
             <div class="collection_box">
-                <img src="../image/pic-1-removebg-preview.png" alt="">
-                <p class="collection_box--main">Havanna shirt</p>
+                <img src="../image/pic-7-removebg-preview.png" alt="">
+                <p class="collection_box--main">Green Short</p>
                 <span class="collection_box--line"></span>
-                <p class="collection_box--price">#2,000</p>
+                <p class="collection_box--price">#10,000</p>
                 <div class="collection_box-icon"><i class='bx bx-basket'></i></div>
             </div>
             <div class="collection_box">
-                <img src="../image/pic-1-removebg-preview.png" alt="">
-                <p class="collection_box--main">Havanna shirt</p>
+                <img src="../image/pic-8-removebg-preview.png" alt="">
+                <p class="collection_box--main">Brown Cross-bag</p>
                 <span class="collection_box--line"></span>
-                <p class="collection_box--price">#2,000</p>
+                <p class="collection_box--price">#5,000</p>
                 <div class="collection_box-icon"><i class='bx bx-basket'></i></div>
             </div>
         </div>
     </section>
+
+    <!-- ========== Contact ============= -->
+    <section class="section U-primary" id="contactus">
+        <div class="U-primary_box">
+            <h1 class="U_primary_main">Subscribe to get discount coupons &amp; new offers!</h1>
+            <p class="U_primary_text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt erat volutpat.
+            </p>
+            <form action="#" class="form">
+                <input type="email" name="email" id="email" class="formBox--input" placeholder="Enter Your Email" required="">
+                <button type="submit" class="form_btn">Subscribe</button>
+            </form>
+
+            <h2 class="U_primary_sub">Follow us now</h2>
+            <a href="#"><span class="U_primary_iconBox"><i class='bx bxl-facebook'></i></span></a>
+            <a href="#"><span class="U_primary_iconBox left"><i class='bx bxl-twitter' ></i></span></a>
+            <a href="#"><span class="U_primary_iconBox left"><i class='bx bxl-instagram' ></i></span></a>
+        </div>
+    </section>
+
+    <!-- ========= New Collection ========== -->
+    <section class="section section_shop" id="shop">
+        <h1 class="section-title">New Arrival</h1>
+        <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, dolore.</p>
+        <span class="body_line collection_line"></span>
+        <div class="shop_container bd-grid">
+            <div class="shop_box">
+               <img src="../image/Layer-5131.jpg" alt="" class="shopImg">
+            </div>
+            <div class="shop_box shop_textBox">
+                <div class="shop_iconBox"><i class='bx bx-meteor'></i></div>
+                <p class="shop_main">Experience <br> World</p>
+                <p class="shop_sub">in new look</p>
+                <button class="shop_button">Shop Men</button>                      
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimony Section -->
+    <section class="testimony section">
+        <h2 class="section-title">We told you they're good...</h2>
+        <span class="body_line collection_line"></span>
+       <div class="testimony_wrapper bd-grid">
+            <div class="testimony_box">
+                <img src="../image/star.webp" alt="excellent">
+                <div class="testimony__textBox">
+                    <p class="testimony_sub">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dignissimos, voluptatibus culpa 
+                        sit ea dolore molestias in placeat, beatae architecto ipsum similique autem obcaecati error saepe, 
+                        fugiat assumenda. Praesentium officia porro quibusdam quisquam eos molestias.
+                    </p>
+                    <h6 class="testimony_main">Olamilekan R.</h6>
+                    <p class="testimony_date">2021</p>
+                </div>
+            </div>
+            <div class="testimony_box">
+                <img src="../image/star.webp" alt="excellent">
+                <div class="testimony__textBox">
+                    <p class="testimony_sub">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dignissimos, voluptatibus culpa 
+                        sit ea dolore molestias in placeat, beatae architecto ipsum similique autem obcaecati error saepe, 
+                        fugiat assumenda. Praesentium officia porro quibusdam quisquam eos molestias.
+                    </p>
+                    <h6 class="testimony_main">Olawale P.</h6>
+                    <p class="testimony_date">2021</p>
+                </div>
+            </div>
+            <div class="testimony_box">
+                <img src="../image/star.webp" alt="excellent">
+                <div class="testimony__textBox">
+                    <p class="testimony_sub">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dignissimos, voluptatibus culpa 
+                        sit ea dolore molestias in placeat, beatae architecto ipsum similique autem obcaecati error saepe, 
+                        fugiat assumenda. Praesentium officia porro quibusdam quisquam eos molestias.
+                    </p>
+                    <h6 class="testimony_main">Precious A.</h6>
+                    <p class="testimony_date">2021</p>
+                </div>
+            </div>
+       </div>
+       <button class="testimony_btn">More Reviews</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer section">
+        <div class="footer_wrapper bd-grid">
+            <div class="footer_box">
+                <p class="footer_heading">Shuga's Empire #1 Africa <br> Marketplace</p>
+                <p class="footer_text">8, Baba Avenue, Oseere Matogun Ogun State, Nigeria</p>
+                <p class="footer_text">support@Onubia.com</p>
+                <a href="#"><p class="footer_text">Text Us</p></a>
+            </div>
+            <div class="footer_box">
+                <p class="footer_heading">Get a Support</p>
+                <ul class="footer_ul">
+                   <li class="footer_li"><a href="#" class="footer_link">Support Videos</a></li>
+                   <li class="footer_li"><a href="#" class="footer_link">FAQ</a></li>
+                   <li class="footer_li"><a href="#" class="footer_link">Reviews</a></li>
+                   <li class="footer_li"><a href="#" class="footer_link">Warranty & Returns</a></li>
+                   <li class="footer_li"><a href="#" class="footer_link">Terms & Policies</a></li>
+                   <li class="footer_li"><a href="#" class="footer_link">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <p class="footer_heading">Our partners<br> & Program</p>
+                <ul class="footer_ul">
+                    <li class="footer_li"><a href="#" class="footer_link">#1 Africa Marketplace</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Become an Agent</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Discount</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Custom Products</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">After Pay</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer_copy">Onubia © 2021 Developed & Built by <a href="#">YourCodingAffairs</a></p>
+    </footer>
+
+     <!--========== SCROLL REVEAL ==========-->
+     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ======= Javascript file ========= -->
     <script src="../javaScript/app.js"></script>
